@@ -1,0 +1,75 @@
+# Primeiras páginas interativas com JavaScript
+
+## Sintaxe básica em JavaScript
+- O JavaScript é uma linguagem de programação que permite a você criar conteúdo dinâmico, ou seja, conteúdo que pode ser alterado sem que a página seja recarregada.
+- Num prédio, o HTML seria a estrutura, o CSS seria a pintura e o JavaScript seria a eletricidade/encanamento, etc
+- A tipagem do JavaScript é dinâmica, ou seja, não é necessário declarar o tipo de uma variável, o próprio JavaScript irá descobrir o tipo da variável em tempo de execução.
+  - Por exemplo, se você declarar uma variável com o valor 10, o JavaScript irá entender que o tipo dessa variável é number, se você declarar uma variável com o valor "10", o JavaScript irá entender que o tipo dessa variável é string.
+- Entre os tipos primitvos do JavaScript se encontram:
+  - number: números inteiros ou decimais
+  - string: texto
+  - boolean: true ou false
+  - null: valor nulo
+  - undefined: valor indefinido
+  - Array: lista de valores
+  - Object: objeto
+  - Function: função
+- Há 3 formas de declarar uma variável em JavaScript:
+  - var: escopo global e local(função), se não tiver um valor atribuído, o valor será undefined
+  - let: escopo global, local(função) e de bloco, se não tiver um valor atribuído, o valor será undefined. Usa-se a let em escopo local por convenção
+  - const: escopo global, local(função) e de bloco, se não tiver um valor atribuído, o valor será undefined
+- A atribuição de valores a variáveis pode ser feita de 2 formas:
+  - Atribuição direta: var x = 10;
+  - Atribuição por referência: var x = y; (x e y apontam para o mesmo endereço de memória)
+- Para comparar valores em JavaScript, usamos os operadores de comparação:
+  - ==: igualdade
+  - ===: igualdade estrita
+  - !=: diferente
+  - !==: diferente estrito
+- Arrays são listas de valores, e podem ser declarados de 2 formas:
+  - var x = [1, 2, 3, 4, 5];
+  - var x = new Array(1, 2, 3, 4, 5);
+- Os arrays são acessados através de índices, que começam em 0, ou seja, o primeiro elemento de um array está no índice 0, o segundo elemento está no índice 1, e assim por diante.
+- Para manipular o Array há vários métodos disponíveis, como:
+  - `push()`: adiciona um elemento no final do array
+  - `pop()`: remove o último elemento do array
+  - `shift()`: remove o primeiro elemento do array
+  - `unshift()`: adiciona um elemento no início do array
+  - `splice()`: remove um elemento do array
+  - `slice()`: retorna um novo array a partir de um índice
+  - `concat()`: concatena 2 arrays
+  - `reverse()`: inverte a ordem dos elementos do array
+  - `sort()`: ordena os elementos do array
+  - `indexOf()`: retorna o índice de um elemento do array
+  - `lastIndexOf()`: retorna o último índice de um elemento do array
+  - `join()`: junta todos os elementos do array em uma string
+  - `forEach()`: executa uma função para cada elemento do array
+  - `map()`: retorna um novo array com base em uma função
+  - `filter()`: retorna um novo array com base em uma condição
+  - `reduce()`: retorna um valor com base em uma função
+  - `every()`: verifica se todos os elementos do array passam em uma condição
+  - `some()`: verifica se pelo menos um elemento do array passa em uma condição
+  - `find()`: retorna o primeiro elemento que passa em uma condição
+  - `findIndex()`: retorna o índice do primeiro elemento que passa em uma condição
+  - `includes()`: verifica se um elemento existe no array
+- Objetos são coleções de propriedades, e podem ser declarados de 2 formas:
+  - var x = {nome: "João", idade: 20};
+  - var x = new Object({nome: "João", idade: 20});
+- As estruturas condicionais são usadas para executar um bloco de código caso uma condição seja verdadeira, e podem ser declaradas de 3 formas:
+  - `if`: executa um bloco de código caso a condição seja verdadeira
+  - `if...else`: executa um bloco de código caso a condição seja verdadeira, e outro bloco caso a condição seja falsa
+  - `switch`: executa um bloco de código caso a condição seja verdadeira, e outro bloco caso a condição seja falsa
+- O operator ternário é uma forma simplificada de escrever uma estrutura condicional, e pode ser declarado da seguinte forma:
+  - `condição ? valor se verdadeiro : valor se falso`
+  - Exemplo: `var x = 10; var y = x > 5 ? "maior" : "menor";`
+- Estruturas de repetição são usadas para executar um bloco de código várias vezes, e podem ser declaradas de 3 formas:
+  - `for`: executa um bloco de código várias vezes, até que uma condição seja falsa
+  - `while`: executa um bloco de código várias vezes, até que uma condição seja falsa
+  - `do...while`: executa um bloco de código várias vezes, até que uma condição seja falsa
+- Funções são blocos de código que podem ser executados várias vezes, e podem ser declaradas de 2 formas:
+  - `function`: declara uma função
+  - `=>`: declara uma função anônima
+  - `(parametro)` indica que é uma função, parametros são usados para passar valores para a função
+  - `return` indica o valor de retorno da função
+  - `{}` indica o bloco de código da função
+- 
