@@ -72,4 +72,3 @@
   - `(parametro)` indica que é uma função, parametros são usados para passar valores para a função
   - `return` indica o valor de retorno da função
   - `{}` indica o bloco de código da função
-- 
