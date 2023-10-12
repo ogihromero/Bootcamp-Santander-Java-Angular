@@ -1,0 +1,42 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+
+
+<div class="content" role="main">
+
+<h1>Começando com o Angular</h1>
+
+<!-- Property binding-->
+<app-my-button  [buttonText]="button1"></app-my-button>
+<!-- Interpolação-->
+<app-my-button  buttonText="{{button2}}"></app-my-button>
+
+<!-- Event binding-->
+<app-my-button (click)="getAlert()" buttonText="Event binding on click"></app-my-button>
+
+<!--Two way data binding-->
+<h2 id="two-way">Two-way Binding</h2>
+<div id="two-way-1">
+  <app-sizer [(size)]="fontSizePx"></app-sizer>
+  <div [style.font-size.px]="fontSizePx">Resizable Text</div>
+  <label for="font-size">FontSize (px): <input id="font-size" [(ngModel)]="fontSizePx"></label>
+</div>
+<br>
+<div id="two-way-2">
+  <h2>De-sugared two-way binding</h2>
+  <app-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-sizer>
+</div>
+
+
+
+
+<router-outlet></router-outlet>

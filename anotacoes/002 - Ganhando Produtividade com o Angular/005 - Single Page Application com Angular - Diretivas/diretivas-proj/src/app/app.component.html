@@ -1,0 +1,15 @@
+<app-comp-attributes>
+    <h3>Conteúdo ng Content</h3>
+    <p>Conteúdo de fora por ngContent</p></app-comp-attributes>
+
+<app-card *ngIf="isAliveCard; else anotherBlock">
+</app-card>
+<ng-template #anotherBlock>
+    <p>Este é Um bloco de template "secreto"</p>
+</ng-template>
+
+<h2>Custom Module</h2>
+<app-input></app-input>
+<app-list-view></app-list-view>
+
+<router-outlet></router-outlet>
