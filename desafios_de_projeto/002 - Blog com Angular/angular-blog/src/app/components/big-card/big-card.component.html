@@ -1,0 +1,16 @@
+<div class="container mx-6 flex flex-col items-center justify-start mt-4">
+  <a [routerLink]="['content', id]" class="group">
+    <img
+      src={{coverImage}}
+      alt="Placeholder big_card"
+      class="object-fill w-full h-40%"
+    />
+    <h2 class="font-semibold mt-3 group-hover:underline">
+     {{title}}
+    </h2>
+    <p class="text-gray-500 mt-2 group-hover:text-white group-hover:underline">
+     {{description}}
+      
+    </p>
+  </a>
+</div>

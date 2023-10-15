@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        background-color: #0D0D0D;
+        color: white;
+        
+    }
+    h1 {
+      @apply text-4xl;
+    }
+    h2 {
+      @apply text-3xl;
+      
+    }
+    h3 {
+      @apply text-2xl;
+    } 
+    h4 {
+        @apply text-xl;
+      } 
+    h5 {
+        @apply text-lg;
+    }
+    h6 {
+        @apply text-base;
+    }
+}
+
+
+/* Color Theme Swatches in Hex */
+.The-Forgotten-Toys-Project-1-hex { color: #591902; }
+.The-Forgotten-Toys-Project-2-hex { color: #F24607; }
+.The-Forgotten-Toys-Project-3-hex { color: #A63005; }
+.The-Forgotten-Toys-Project-4-hex { color: #BFBFBF; }
+.The-Forgotten-Toys-Project-5-hex { color: #0D0D0D; }
+
+
+/* Color Theme Swatches in Hex */
+$The-Forgotten-Toys-Project-1-hex: #591902;
+$The-Forgotten-Toys-Project-2-hex: #F24607;
+$The-Forgotten-Toys-Project-3-hex: #A63005;
+$The-Forgotten-Toys-Project-4-hex: #BFBFBF;
+$The-Forgotten-Toys-Project-5-hex: #0D0D0D;
+
